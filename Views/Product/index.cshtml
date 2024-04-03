@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+ <div class="containet mt-5">
+    <h1>Listado de Productos</h1>
+    <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Expiracion</th>
+                    <th>User id</th>
+                    <th>Acciones</th>
+
+                </tr>
+               
+
+            </thead>
+
+            @foreach (var product in Model){
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+                    <td>@product.Amount</td>
+                    <td>@product.ExpirationDate</td>
+                    <td>@product.UserId</td>
+
+                    
+                    
+                    <td>
+                       <a href="@Url.Action("Details", "Product", new { id = @product.Id })" class="btn btn-primary">Detalles</a>
+                        <a asp-action="Edit" asp-route-id="@product.Id">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@product.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+    </table>       
+
+ </div>
+
+
+</body>
+</html>
