@@ -1,15 +1,13 @@
 @model Bdproductos.Models.User
 
-
-
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="detallesLibroModalLabel">Detalles del Libro</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="detallesProductoModalLabel">Detalles del Usuario</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="window.location.href='/User'"></button>
+
         </div>
         <div class="modal-body">
-
             <div class="row">
                 <div class="col-md-8">
                     <p><strong>Id:</strong> @Model.Id</p>
