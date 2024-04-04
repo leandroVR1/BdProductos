@@ -73,3 +73,4 @@
 /home/riwip5-038/Documents/leo/BdProductos/obj/Debug/net8.0/Bdproductos.pdb
 /home/riwip5-038/Documents/leo/BdProductos/obj/Debug/net8.0/Bdproductos.genruntimeconfig.cache
 /home/riwip5-038/Documents/leo/BdProductos/obj/Debug/net8.0/ref/Bdproductos.dll
+/home/riwip5-023/Documents/leo/BdProductos/obj/Debug/net8.0/Bdproductos.sourcelink.json
