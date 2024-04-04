@@ -41,6 +41,7 @@ namespace Bdproductos.Controllers
 
             return RedirectToAction("index");
         }
+
         public async Task<IActionResult> Delete(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -48,6 +49,18 @@ namespace Bdproductos.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("index");
         }
+      /*   public async Task<IActionResult> Edit(int? id)
+        {
+            return View(await _context.Users.FirstOrDefaultAsync(x => x.Id ==));
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, UserController user){
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("index");
+        } */
+        
 
 
 
