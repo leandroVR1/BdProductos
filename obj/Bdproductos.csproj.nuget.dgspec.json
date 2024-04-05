@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip4-047/Documents/leo/BdProductos/Bdproductos.csproj": {}
+    "/home/riwip5-023/Documents/leo/BdProductos/Bdproductos.csproj": {}
   },
   "projects": {
-    "/home/riwip4-047/Documents/leo/BdProductos/Bdproductos.csproj": {
+    "/home/riwip5-023/Documents/leo/BdProductos/Bdproductos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip4-047/Documents/leo/BdProductos/Bdproductos.csproj",
+        "projectUniqueName": "/home/riwip5-023/Documents/leo/BdProductos/Bdproductos.csproj",
         "projectName": "Bdproductos",
-        "projectPath": "/home/riwip4-047/Documents/leo/BdProductos/Bdproductos.csproj",
-        "packagesPath": "/home/riwip4-047/.nuget/packages/",
-        "outputPath": "/home/riwip4-047/Documents/leo/BdProductos/obj/",
+        "projectPath": "/home/riwip5-023/Documents/leo/BdProductos/Bdproductos.csproj",
+        "packagesPath": "/home/riwip5-023/.nuget/packages/",
+        "outputPath": "/home/riwip5-023/Documents/leo/BdProductos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip4-047/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-023/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/riwip4-047/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/riwip5-023/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
