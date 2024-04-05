@@ -76,3 +76,83 @@
 </body>
 
 </html>
+
+
+@* 2version<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="content-page">
+        <div class="content">
+            <div class="container-fluid mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <a asp-controller="User" asp-action="Create" class="btn btn-primary mb-3">Crear Usuario</a>
+                                <h2>Usuarios</h2>
+                                <form id="searchForm">
+                                    <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+                                    <input type="submit" value="Buscar">
+                                </form>
+                                <div id="userList">
+                                    <!-- Aquí se mostrarán los usuarios -->
+                                </div>
+                                <div class="table-responsive mt-4">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <tr class="bg-secondary text-white">
+                                                <th>Id</th>
+                                                <th>Nombres</th>
+                                                <th>Apellidos</th>
+                                                <th>Correo</th>
+                                                <th>Telefono</th>
+                                                <th>Direccion</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        @foreach (var user in Model)
+                                        {
+                                            <tr>
+                                                <td>@user.Id</td>
+                                                <td>@user.Names</td>
+                                                <td>@user.LastNames</td>
+                                                <td>@user.Email</td>
+                                                <td>@user.Phone</td>
+                                                <td>@user.Address</td>
+                                                <td>
+                                                    <a asp-controller="User" asp-action="Details" asp-route-id="@user.Id" class="btn btn-primary">Detalles</a>
+                                                    <a asp-controller="User" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning">Editar</a>
+                                                    <a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-danger">Eliminar</a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+ @section Scripts {
+    <script>
+        var searchUrl = '@Url.Action("Search", "User")';
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/js/search.js"></script>
+}
+
+</body>
+
+</html> *@
